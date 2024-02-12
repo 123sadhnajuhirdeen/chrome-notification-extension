@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Timer Extension",
+  "version": "1.0.0",
+  "description": "Hello Extension",
+  "icons": {
+    "16": "hello_extensions.png",
+    "48": "hello_extensions.png",
+    "126": "hello_extensions.png"
+  },
+
+  "action": {
+    "default_icon": {
+      "16": "hello_extensions.png",
+      "24": "hello_extensions.png",
+      "32": "hello_extensions.png"
+    },
+
+    "default_title": "Timer Extension Action Title",
+    "default_popup": "popup.html"
+  },
+
+  "options_page": "options.html",
+  "permissions": ["storage", "alarms", "notifications"],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
